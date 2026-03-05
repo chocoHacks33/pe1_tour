@@ -1,6 +1,7 @@
 class TourGuide {
   
-  private int id;
+  private final int id;
+  
   public TourGuide(int id) {
     this.id = id;
   }

@@ -1,21 +1,21 @@
-class Visitor {
-
-  private static int counter = 1000;
+class Visitor { 
+  
+  private static int Sid = 1000;
+  private final int id;
   private int ticketType;
-  private int id;
 
   public Visitor(int ticketType) {
-    this.id = this.counter;
+    this.id = Visitor.Sid;
     this.ticketType = ticketType;
-    this.counter += 1;
+    Visitor.Sid += 1;
   }
-  
+
   public int getTicketType() {
     return this.ticketType;
   }
 
   @Override
   public String toString() {
-    return "V" + (this.id); 
-  } 
+    return "V" + this.id;
+  }
 }
